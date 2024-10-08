@@ -1,6 +1,6 @@
-<html class="js backgroundsize borderimage csstransitions fontface svg" dir="ltr">
+<html lang="en" class="js backgroundsize borderimage csstransitions fontface svg" dir="ltr">
 <head>
-	<title>Untitled</title>
+	<title>Max Real Estate - Your Property Hub</title>
 	<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/i18n/en.min.js"></script>
 	<script
 		src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/deps/jsonpointer.min.js"></script>
@@ -48,20 +48,23 @@
 	</div>
 	<div> <!-- start of header-->
 
-		<div class="app-bar">
-			<div class="container">
-				<div class="row">
-					<section class="col-xs-12">
-						<h2 class="wb-inv">Name of Web application</h2>
-						<a class="app-name" href="./index-en.html">Hi/Max Real Estate</a>
-					</section>
+		<header role="banner" aria-label="Site header">
+			<div class="app-bar">
+				<div class="container">
+					<div class="row">
+						<section class="col-xs-12">
+							<h2 class="wb-inv">Name of Web application</h2>
+							<a class="app-name" href="./index-en.html">Hi/Max Real Estate</a>
+						</section>
+					</div>
 				</div>
 			</div>
-		</div>
 
-		<div id="wb-sm" data-ajax-replace="../ajax/cdtsMenu-en.html" data-trgt="mb-pnl"
-			class="wb-menu visible-md visible-lg wb-init wb-data-ajax-replace-inited wb-menu-inited wb-navcurr-inited"
-			typeof="SiteNavigationElement">
+		</header>
+
+		<nav id="wb-sm" role="navigation" aria-label="Main navigation" data-ajax-replace="../ajax/cdtsMenu-en.html" data-trgt="mb-pnl" 
+		  class="wb-menu visible-md visible-lg wb-init wb-data-ajax-replace-inited wb-menu-inited wb-navcurr-inited" 
+		  typeof="SiteNavigationElement">
 			<div class="pnl-strt container nvbar">
 				<h2>Topics menu</h2>
 				<div class="row">
@@ -81,8 +84,7 @@
 			</div>
 
 
-		</div> <!-- end of main navigation-->
-
+		</nav> <!-- end of main navigation-->
 	</div> <!-- end of header-->
 
 	<main property="mainContentOfPage" class="container">
@@ -122,7 +124,7 @@
 
 
 	</main>
-	<div id="wb-info" class=" wb-navcurr-inited">
+	<footer role="contentinfo" aria-label="Footer">
 		<div class="gc-sub-footer">
 			<div class="container d-flex align-items-center">
 				<div>
@@ -144,8 +146,8 @@
 				</div>
 
 			</div>
-		</div>
-	</div> <!-- end of footer-->
+		</div> 
+</footer> <!-- end of footer-->
 
 	<script>
 		var defFooter = document.getElementById("def-footer");
