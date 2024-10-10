@@ -73,19 +73,19 @@
 	<h2>Topics menu</h2>
 	<div class="row">
 	<ul role="menubar" class="list-inline menu">
-	<li><a class="item" href="index-en.html" tabindex="0" aria-posinset="1" aria-setsize="7"
+	<li role="presentation"><a class="item" href="index-en.html" tabindex="0" aria-posinset="1" aria-setsize="7"
 
 	role="menuitem">Home</a></li>
-	<li><a class="item" href="internet-en.html" tabindex="-1" aria-posinset="2" aria-setsize="7"
+	<li role="presentation"><a class="item" href="internet-en.html" tabindex="-1" aria-posinset="2" aria-setsize="7"
 
 	role="menuitem">Buying</a></li>
-	<li><a class="item" href="intranet-en.html" tabindex="-1" aria-posinset="3" aria-setsize="7"
+	<li role="presentation"><a class="item" href="intranet-en.html" tabindex="-1" aria-posinset="3" aria-setsize="7"
 
 	role="menuitem">Selling</a></li>
-	<li><a class="item" href="faq-en.html" tabindex="-1" aria-posinset="6" aria-setsize="7"
+	<li role="presentation"><a class="item" href="faq-en.html" tabindex="-1" aria-posinset="6" aria-setsize="7"
 
 	role="menuitem">FAQs</a></li>
-	<li><a class="item" href="contact-en.html" tabindex="-1" aria-posinset="7" aria-setsize="7"
+	<li role="presentation"><a class="item" href="contact-en.html" tabindex="-1" aria-posinset="7" aria-setsize="7"
 
 	role="menuitem">Contact us</a></li>
 	</ul>
@@ -104,54 +104,59 @@
             <h2>Hi/Max Real Estate & Houses</h2>
             <article>
                 <p>Buying or selling a home is likely the largest and most important transaction you’ll ever make. That’s why so many trust <strong>Hi/MAX Real Estate</strong>, which according to Canadian consumers, has been voted <em>#1 Most Trusted Real Estate Agents in Canada</em> six times in a row.</p>
-                <p><a href="https://www.google.ca/">Let's get started</a>:</p>
+                <p><a href="https://www.google.ca/" style="color:blue; text-decoration:underline;">Let's get started</a></p>
             </article>
         </section>
     </p>
 	<div class="row">
-        <div class="col-md-4 pull-right">
+        <div class="col-md-4 pull-right" style="background-color:#e1e4e7;">
             <h3>Related Resources</h3>
             <p>It's time to sell and find the next "one". Let us help you navigate the ins & outs of your next move.</p>
             <ul>
-                <li><a href="https://www.google.ca/">Looking for an upgrade?</a></li>
-                <li><a href="https://www.google.ca/">Buying tips</a></li>
-                <li><a href="https://www.google.ca/">How much is your current home worth?</a></li>
+                <li><a href="https://www.google.ca/" style="color:blue; text-decoration:underline;">Looking for an upgrade?</a></li>
+                <li><a href="https://www.google.ca/" style="color:blue; text-decoration:underline;">Buying tips</a></li>
+                <li><a href="https://www.google.ca/" style="color:blue; text-decoration:underline;">How much is your current home worth?</a></li>
             </ul>
         </div>
         <div class="col-md-8">
-            <h3>Why Choosing HI/Max</h3>
-            <p>Hi/Max agents go above and beyond and always strive to be the best they can be. HI/MAX is extremely community-focused, and our agents are too!</p>
-        
-            <h4>Stats of HI/Max</h4>
-            <table border="1" cellpadding="10" cellspacing="0" role="table">
-                <caption>Yearly Stats of Sold Properties and Average Selling Prices</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Year</th>
-                        <th scope="col">Sold Properties (Quebec)</th>
-                        <th scope="col">Sold Properties (Ontario)</th>
-                        <th scope="col">Average Selling Price (Single House)</th>
-                        <th scope="col">Average Selling Price (Condo)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2021</td>
-                        <td>50</td>
-                        <td>100</td>
-                        <td>$500,000</td>
-                        <td>$189,000</td>
-                    </tr>
-                    <tr>
-                        <td>2022</td>
-                        <td>100</td>
-                        <td>200</td>
-                        <td>$780,000</td>
-                        <td>$240,000</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+			<h3 style="color: black; font-weight: bold;">Why Choosing HI/Max</h3>
+			<p>Hi/Max agents go above and beyond and always strive to be the best they can be. HI/MAX is extremely community-focused, and our agents are too!</p>
+		
+			<h4 style="color: black; font-weight: bold;">Stats of HI/Max</h4>
+			<table border="1" cellpadding="10" cellspacing="0" role="table" style="width: 100%; border-collapse: collapse; text-align: center;">
+				<caption style="caption-side: top; font-weight: bold; text-align: left;">Yearly Stats of Sold Properties and Average Selling Prices</caption>
+				<thead style="background-color: #333; color: white; height:80px;">
+					<tr>
+						<th id="year" scope="col" style="background-color: #333; color: white;">Year</th>
+						<th id="sold-que" scope="col" colspan="2" style="background-color: #333; color: white;">Sold Properties</th>
+						<th id="avg-price" scope="col" colspan="2" style="background-color: #333; color: white;">Average selling price</th>
+					</tr>
+					<tr>
+						<th></th>
+						<th id="quebec" style="background-color: #666; color: white;">Quebec</th>
+						<th id="ontario" style="background-color: #666; color: white;">Ontario</th>
+						<th id="single-house" style="background-color: #666; color: white;">Single house</th>
+						<th id="condo" style="background-color: #666; color: white;">Condo</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td id="year-2021" style="background-color: #f2f2f2;">2021</td>
+						<td headers="year-2021 quebec">50</td>
+						<td headers="year-2021 ontario">100</td>
+						<td headers="year-2021 single-house">$500,000</td>
+						<td headers="year-2021 condo">$189,000</td>
+					</tr>
+					<tr>
+						<td id="year-2022" style="background-color: #f2f2f2;">2022</td>
+						<td headers="year-2022 quebec">100</td>
+						<td headers="year-2022 ontario">200</td>
+						<td headers="year-2022 single-house">$780,000</td>
+						<td headers="year-2022 condo">$240,000</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</div>
 	<div class="clear"></div>
 	<div>
@@ -159,20 +164,22 @@
     </div>
 	<div class="row">
         <div class="col-md-4">
-            <img src="/mnt/data/image.png" alt="A red house ornament with a 'For Sale' sign hanging from a tree branch" style="width:100%;">
-            <h3><a href="https://www.google.ca/" style="color:blue; text-decoration:underline;">Looking to sell your property?</a></h3>
-            <p>Let us help you list your home and find potential buyers today!</p>
+            <img src="https://github.com/BhavikaPathria-02/lab6/blob/main/1.png?raw=true" alt="A red house ornament with a 'For Sale' sign hanging from a tree branch" style="width:100%;">
+            <h4><a href="https://www.google.ca/" style="color:blue; text-decoration:underline;">What Are The Risks of Selling a Home Yourself?</a></h4>
+            <p style="font-size: 16px;">We’ve all seen the videos, read the stories, and gasped at the images of people who thought they could conquer a project that would have been better left to the professionals. 
+				<a href="https://www.google.ca/" style="color:blue; text-decoration:underline;">Read more</a>
+			</p>
         </div>
         
         <div class="col-md-4">
-            <img src="/mnt/data/image.png" alt="A person in a meeting with a real estate agent" style="width:100%;">
-            <h3><a href="https://www.google.ca/" style="color:blue; text-decoration:underline;">7 Questions to Ask a Real Estate Agent Before You Commit</a></h3>
-            <p>According to research by the National Association of Realtors, there are considerable benefits to working with a real estate agent, including higher sale prices.</p>
+            <img src="https://github.com/BhavikaPathria-02/lab6/blob/main/2.png?raw=true" alt="A person in a meeting with a real estate agent" style="width:100%;">
+            <h4><a href="https://www.google.ca/" style="color:blue; text-decoration:underline;">7 Questions to Ask a Real Estate Agent Before You Commit</a></h4>
+            <p style="font-size: 16px;">According to research by the National Association of Realtors, there are considerable benefits to working with a real estate agent, including higher sale prices.</p>
         </div>
 	    <div class="col-md-4">
-          <img src="/mnt/data/image.png" alt="A person hanging 'For Sale' board outside the house" style="width:100%;">
-          <h3><a href="https://www.google.ca/" style="color:blue; text-decoration:underline;">8 Reasons to Hire an Agent When Selling Your Home</a></h3>
-          <p>With all the many different moving parts involved in selling your home, here are eight very valid reasons to have a real estate agent on speed dial.</p>
+          <img src="https://github.com/BhavikaPathria-02/lab6/blob/main/3.png?raw=true" alt="A person hanging 'For Sale' board outside the house" style="width:100%;">
+          <h4><a href="https://www.google.ca/" style="color:blue; text-decoration:underline;">8 Reasons to Hire an Agent When Selling Your Home</a></h4>
+          <p style="font-size: 16px;">With all the many different moving parts involved in selling your home, here are eight very valid reasons to have a real estate agent on speed dial.</p>
 	    </div>
 	</div>
 	<div class="pagedetails">
@@ -248,5 +255,3 @@
 	</body>
 	
 	</html>
-	
-
